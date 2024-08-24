@@ -65,6 +65,7 @@ class Robot(Agent):
 
 class RandomMovementModel(Model):
     def __init__(self, width, height, num_agents, num_boxes):
+        super().__init__(width, height,num_agents, num_boxes)
         self.num_agents = num_agents
         self.num_boxes = num_boxes
         self.grid = SingleGrid(width, height, False)
